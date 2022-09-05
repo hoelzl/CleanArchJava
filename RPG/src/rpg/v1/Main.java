@@ -12,5 +12,10 @@ public class Main {
         merlin.performPowerAttack(camillo);
         camillo.performBasicAttack(arthur);
         camillo.performPowerAttack(merlin);
+
+        arthur.setBasicAttack(new PhysicalAttack(30));
+        arthur.setPowerAttack(new MagicalAttack(40));
+        arthur.performBasicAttack(merlin);
+        arthur.performPowerAttack(camillo);
     }
 }
