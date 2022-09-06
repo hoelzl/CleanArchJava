@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/MvcDemo/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Strategy/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/WeatherData/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Timer/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
