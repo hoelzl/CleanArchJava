@@ -1,4 +1,4 @@
-package employee.v2;
+package employee.v2_ocp_strategy;
 
 public class HouredPaymentCalculator implements PaymentCalculator {
     int hoursWorked;

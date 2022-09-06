@@ -1,4 +1,4 @@
-package employee.v2;
+package employee.v2_ocp_strategy;
 
 public class CommissionedPaymentCalculator implements PaymentCalculator {
     Project project;

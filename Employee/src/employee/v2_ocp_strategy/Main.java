@@ -1,4 +1,4 @@
-package employee.v2;
+package employee.v2_ocp_strategy;
 
 import java.util.ArrayList;
 import java.util.List;

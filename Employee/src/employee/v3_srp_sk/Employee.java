@@ -1,4 +1,4 @@
-package employee.v3_solid_sk;
+package employee.v3_srp_sk;
 
 @SuppressWarnings({"unused", "DuplicatedCode", "FieldMayBeFinal"})
 public class Employee {

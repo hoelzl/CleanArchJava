@@ -1,6 +1,4 @@
-package employee.v2;
-
-import employee.v1.EmployeeType;
+package employee.v2_ocp_strategy;
 
 public class Employee {
     int id;
@@ -13,6 +11,7 @@ public class Employee {
         this.paymentCalculator = paymentCalculator;
     }
 
+    @SuppressWarnings("unused")
     public int getId() {
         return id;
     }

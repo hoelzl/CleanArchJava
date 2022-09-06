@@ -1,5 +1,6 @@
-package employee.v1;
+package employee.v1_ocp_sk;
 
+@SuppressWarnings("unused")
 public class Employee {
     int id;
     String name;

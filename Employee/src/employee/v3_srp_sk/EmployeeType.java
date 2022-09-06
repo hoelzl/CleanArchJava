@@ -1,4 +1,4 @@
-package employee.v3_solid_sk;
+package employee.v3_srp_sk;
 
 public enum EmployeeType {
     REGULAR,

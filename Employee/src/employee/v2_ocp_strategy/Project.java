@@ -1,4 +1,4 @@
-package employee.v1;
+package employee.v2_ocp_strategy;
 
 public class Project {
     private String name;
@@ -21,6 +21,7 @@ public class Project {
         return commissionedPay;
     }
 
+    @SuppressWarnings("unused")
     public void setCommissionedPay(double commissionedPay) {
         this.commissionedPay = commissionedPay;
     }
