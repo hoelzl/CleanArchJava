@@ -1,6 +1,6 @@
 package employee.v3_solid_sk;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "DuplicatedCode"})
 public class Employee {
     int id;
     String name;
@@ -35,40 +35,34 @@ public class Employee {
     }
 
     public double calculatePay() {
-        //noinspection DuplicatedCode
-        switch (employeeType) {
-            case REGULAR -> {
-                return salary + 60.0 * overtime;
-            }
-            case HOURED -> {
-                return 50.0 * overtime;
-            }
-            case COMMISSIONED -> {
-                return project.getCommissionedPay();
-            }
-        }
-        return 0.0;
+        return switch (employeeType) {
+            case REGULAR -> salary / 12 + overtime * 50;
+            case HOURED -> overtime * 90;
+            case COMMISSIONED -> project.getAssets() * 0.18;
+//            default -> throw new IllegalArgumentException("Unknown Employee Type!");
+        };
     }
 
     public String reportHours() {
-        return String.format("%.1f", calculateRegularHours());
+        return switch (employeeType) {
+            case REGULAR -> String.format("Employee %s works %.1f hours per Week.", getName(),
+                    calculateRegularHours() + overtime);
+            case HOURED -> String.format("Freelancer %s works %d hours per Week.", getName(), overtime);
+            case COMMISSIONED -> String.format("%s is commissioned, working hours are not relevant!", getName());
+            // default -> throw new IllegalArgumentException("Unknown Employee Type!");
+        };
     }
 
     public void printReport() {
-        System.out.printf("Employee %s works %s hours and earns $%.2f.%n", getName(), reportHours(), calculatePay());
+        System.out.printf("Employee %s earns $%.2f.%n", getName(), calculatePay());
+        System.out.println(reportHours());
+    }
+
+    public void saveEmployee() {
+        System.out.printf("Saving Employee %s to database...\n", getName());
     }
 
     private double calculateRegularHours() {
-        switch (employeeType) {
-            case REGULAR -> {
-                return 40.0 + overtime;
-            }
-            case HOURED -> {
-                return overtime;
-            }
-            default -> {
-                return 40.0;
-            }
-        }
+        return 40.5;
     }
 }

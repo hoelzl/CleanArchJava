@@ -2,11 +2,11 @@ package employee.v3_solid_sk;
 
 public class Project {
     private String name;
-    private double commissionedPay;
+    private double assets;
 
-    public Project(String name, double commissionedPay) {
+    public Project(String name, double assets) {
         this.name = name;
-        this.commissionedPay = commissionedPay;
+        this.assets = assets;
     }
 
     public String getName() {
@@ -17,12 +17,12 @@ public class Project {
         this.name = name;
     }
 
-    public double getCommissionedPay() {
-        return commissionedPay;
+    public double getAssets() {
+        return assets;
     }
 
     @SuppressWarnings("unused")
-    public void setCommissionedPay(double commissionedPay) {
-        this.commissionedPay = commissionedPay;
+    public void setAssets(double assets) {
+        this.assets = assets;
     }
 }
