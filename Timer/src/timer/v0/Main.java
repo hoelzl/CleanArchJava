@@ -16,7 +16,6 @@ public class Main {
                 for (int i = 0; i < 31; i++) {
                     TimeUnit.SECONDS.sleep(1);
                     clockTimer.tick();
-                    System.out.println(clockTimer);
                     System.out.println("========================\n");
                 }
             } catch (InterruptedException e) {

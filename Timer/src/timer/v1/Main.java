@@ -2,6 +2,7 @@ package timer.v1;
 
 import java.util.concurrent.TimeUnit;
 
+@SuppressWarnings("DuplicatedCode")
 public class Main {
 
     public static void main(String[] args) {
@@ -29,6 +30,13 @@ public class Main {
         try {
             TimeUnit.SECONDS.sleep(3);
             new IsoClock(clockTimer);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        
+        try {
+            TimeUnit.SECONDS.sleep(3);
+            clockTimer.unregisterObserver(digitalClock);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
