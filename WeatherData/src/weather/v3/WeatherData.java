@@ -8,7 +8,7 @@ public class WeatherData {
     double humidity = 0.0;
     double pressure = 0.0;
 
-    ArrayList<Display> displays = new ArrayList<>();
+    List<Display> displays = new ArrayList<>();
 
     public double getTemperature() {
         return temperature;
@@ -16,6 +16,7 @@ public class WeatherData {
 
     public void setTemperature(double temperature) {
         this.temperature = temperature;
+        measurementChanged();
     }
 
     public double getHumidity() {
@@ -24,6 +25,7 @@ public class WeatherData {
 
     public void setHumidity(double humidity) {
         this.humidity = humidity;
+        measurementChanged();
     }
 
     public double getPressure() {
@@ -32,6 +34,7 @@ public class WeatherData {
 
     public void setPressure(double pressure) {
         this.pressure = pressure;
+        measurementChanged();
     }
 
     public void registerDisplay(Display display) {

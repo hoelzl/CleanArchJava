@@ -11,6 +11,6 @@ public class Main {
         weatherData.setTemperature(18.3);
         weatherData.setHumidity(23.4);
         weatherData.setPressure(1012.1);
-        weatherData.measurementChanged();
+        // weatherData.measurementChanged();
     }
 }
