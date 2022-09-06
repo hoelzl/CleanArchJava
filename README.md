@@ -10,5 +10,5 @@ Some websites with resources for design patterns are:
 - The [Hillside group](https://hillside.net/) website, with a
   library of [pattern books](https://hillside.net/patterns/books)
   and a [patterns catalog](https://hillside.net/component/weblinks/category/61-patterns-catalog)
-- Martin Fowler's [website](https://refactoring.com/) (use site
+- Martin Fowler's [website](https://martinfowler.com/) (use site
   search to discover the pattern catalogs)
