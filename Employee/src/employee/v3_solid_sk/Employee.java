@@ -2,12 +2,12 @@ package employee.v3_solid_sk;
 
 @SuppressWarnings({"unused", "DuplicatedCode"})
 public class Employee {
-    int id;
-    String name;
-    double salary;
-    int overtime;
-    Project project;
-    EmployeeType employeeType;
+    private int id;
+    private String name;
+    private double salary;
+    private int overtime;
+    private Project project;
+    private EmployeeType employeeType;
 
     public Employee(int id, String name, double salary, int overtime, Project project, EmployeeType employeeType) {
         this.id = id;
@@ -59,7 +59,7 @@ public class Employee {
     }
 
     public void saveEmployee() {
-        System.out.printf("Saving Employee %s to database...\n", getName());
+
     }
 
     private double calculateRegularHours() {
