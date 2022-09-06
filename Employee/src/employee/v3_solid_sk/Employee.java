@@ -1,6 +1,6 @@
 package employee.v3_solid_sk;
 
-@SuppressWarnings({"unused", "DuplicatedCode"})
+@SuppressWarnings({"unused", "DuplicatedCode", "FieldMayBeFinal"})
 public class Employee {
     private int id;
     private String name;
@@ -59,7 +59,7 @@ public class Employee {
     }
 
     public void saveEmployee() {
-
+        System.out.printf("Saving Employee %s to database...\n", getName());
     }
 
     private double calculateRegularHours() {
