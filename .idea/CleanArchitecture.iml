@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/LoadBalancer/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RPG/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Timer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LowercaseDecorator/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
