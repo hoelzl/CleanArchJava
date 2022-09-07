@@ -1,7 +1,7 @@
 package strategy;
 
 public class Context {
-    private Strategy strategy;
+    private final Strategy strategy;
     public String name;
 
     public Context(Strategy strategy, String name) {
